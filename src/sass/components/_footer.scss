@@ -1,0 +1,70 @@
+/**
+* @name: footer.scss
+* @description: Estilos del Footer
+*/
+
+footer {
+    padding: $paddingLarge 0;
+    background-color: $primary;
+    margin: $marginNormal $marginNormal 0 $marginNormal;
+
+    .container {
+        width: 95%;
+    }
+
+    .left {
+        width: 80%;
+    }
+
+    .middle {
+        margin-right: 8px;
+    }
+
+    b {
+        font-size: 0.75rem;
+        padding-right: 6px;
+    }
+
+    p {
+        font-size: 0.7rem;
+        padding-right: 6px;
+        line-height: 1.25rem;
+        font-weight: $weightMedium;
+    }
+
+    @media screen and (max-width: 640px){
+        margin: 0;
+
+        .container {
+            width: 95%;
+        }
+    
+        .left {
+            width: 100%;
+            justify-content: center;
+
+            img {
+                height: 85px;
+            }
+
+        }
+    
+        .middle, .right {
+            margin-right: 0;
+            align-items: center;
+            margin: $marginNormal 0;
+        }
+    
+        b {
+            font-size: 0.85rem;
+            padding-right: 0;
+        }
+    
+        p {
+            font-size: 0.8rem;
+            padding-right: 0;
+        }
+
+    }
+
+}

@@ -1,0 +1,57 @@
+/**
+* @name: buttons.scss
+* @description: Estilos para los botones
+*/
+
+.btn {
+    cursor: pointer;
+    padding: $paddingNormal $paddingLarge;
+    transition: background-color 300ms ease-in-out;
+}
+
+.btn-small {
+    padding: $paddingNormal $paddingMedium;
+}
+
+.btn-primary {
+    background-color: $primary;
+    &:hover {
+        background-color: rgba($primary, 0.8);
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    &:hover {
+        background-color: rgba($secondary, 0.8);
+    }
+}
+
+.btn-warning {
+    background-color: $warning;
+    &:hover {
+        background-color: rgba($warning, 0.8);
+    }
+}
+
+.properties {
+    .property {
+        .btn {
+            width: 50%;
+            padding: 4px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .properties {
+        .property {
+            .btn {
+                padding: 8px;
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,43 @@
+/**
+*   colors.scss
+*   @description: Variables de colores
+*/
+
+$primary:           #1aa697;
+$secondary:         #ed2c59;
+$success:           #1caf5f;
+$info:              #17a2b8;
+$warning:           #b0956c;
+$danger:            #b0956c;
+
+$black:             #000000;
+$white:             #FFFFFF;
+$orange:            #ffa800;
+$gray:              #505050;
+$lightgray:         #e6e7ea;
+$darkgray:          #333333;
+$background:        #F6F6F7;
+
+/* Classes de colores */
+
+.color-white { color: $white; }
+
+.color-black { color: $black; }
+
+.color-orange { color: $orange; }
+
+.color-gray { color: $gray; }
+
+.color-darkgray { color: $darkgray; }
+
+.color-primary { color: $primary; }
+
+.color-secondary { color: $secondary; }
+
+.color-success { color: $success; }
+
+.color-info { color: $info; }
+
+.color-warning { color: $warning; }
+
+.color-danger { color: $danger; }

@@ -1,0 +1,312 @@
+/**
+*   @name: _pages.scss
+*   @description: Estilos de la página de inicio
+*/
+
+.main {
+
+    .main-container {
+        width: 650px;
+    }
+
+    .head {
+
+        min-height: 460px;
+        position: relative;
+
+        .logo {
+            top: 0;
+            position: absolute;
+
+            img {
+                top: 0;
+                left: 100px;
+                position: absolute;
+                padding: $paddingNormal;
+                background-color: $primary;
+            }
+        }
+
+        .content {
+            top: 0;
+            left: 0;
+            min-height: 450px;
+            position: absolute;
+
+            h2#txt-share {
+                font-size: 4rem;
+            }
+
+            h2#txt-never {
+                font-size: 3.5rem;
+            }
+
+            h2.shadow {
+                letter-spacing: -1px;
+                text-shadow: -1px 1px 0 $black;
+            }
+
+            h2.font-dancing {
+                text-shadow: 0px 0px 10px rgba(#000000, 0.20);
+            }
+
+            h2#price {
+                font-size: 8rem;
+                line-height: 6rem;
+            }
+
+            .description {
+                p#apply {
+                    letter-spacing: -0.5px;
+                }
+                p#percentage {
+                    span {
+                        color: $secondary;
+                        font-size: 2.5rem;
+                    }
+                }
+                .right {
+                    width: 35%;
+                    margin-left: $marginNormal;
+                    .icon {
+                        width: 18px;
+                        height: 18px;
+                        color: $white;
+                        margin: 4px;
+                        background-color: $secondary;
+                    }
+
+                }
+            }
+
+        }
+
+        .head-image {
+            img {
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                min-height: 100%;
+                position: absolute;
+            }
+        }
+
+    }
+
+    .activities {
+        .activity {
+            width: 25%;
+            height: 120px;
+            position: relative;
+            .image {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                img {
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    transition: all 300ms ease-in-out;
+                    &:hover { transform: scale(1.05); }
+                }
+            }
+            .link {
+                width: 100%;
+                height: 120px;
+                a {
+                    z-index: 10;
+                    align-self: flex-end;
+                    padding: 0 $paddingMedium;
+                    background-color: rgba($primary, 0.75);
+                }
+            }
+            &:hover > .image > img { transform: scale(1.05); }
+        }
+    }
+
+    .properties {
+        .property {
+            width: 31.5%;
+            margin: $marginNormal 4px;
+            height: 200px;
+            position: relative;
+            .image {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                img {
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    transition: all 300ms ease-in-out;
+                    &:hover { transform: scale(1.05); }
+                }
+            }
+            .title {
+                top: 0;
+                left: 0;
+                position: absolute;
+                background-color: rgba($warning, 0.80);
+            }
+            .buttons {
+                left: 0;
+                bottom: 0;
+                position: absolute;
+            }
+            &:hover > .image > img { transform: scale(1.05); }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        
+
+        .main-container {
+            width: 100%;
+        }
+    
+        .head {
+    
+            min-height: 500px;
+    
+            .logo { 
+                img { left: 70px; }
+            }
+    
+            .content {
+                min-height: 450px;
+                position: absolute;
+    
+                h2#txt-share {
+                    font-size: 3rem;
+                }
+    
+                h2#txt-never {
+                    font-size: 3rem;
+                }
+    
+                h2#price {
+                    font-size: 6rem;
+                    line-height: 5rem;
+                }
+    
+                .description {
+                    p#percentage {
+                        span {
+                            color: $secondary;
+                            font-size: 2.5rem;
+                        }
+                    }
+                    .right { width: 60%; }
+                }
+    
+            }
+    
+            .head-image {
+                img { object-fit: cover; }
+            }
+    
+        }
+    
+        .properties {
+            .property { width: 45%; }
+        }
+
+    }
+
+    
+    @media screen and (max-width: 480px) {
+        
+
+        .main-container {
+            width: 100%;
+        }
+    
+        .head {
+    
+            min-height: 500px;
+    
+            .logo { 
+                width: 100%;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                img { 
+                    left: 0; 
+                    position: relative;
+                }
+            }
+    
+            .content {
+                min-height: 450px;
+                position: absolute;
+                h2 {
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+                h2#txt-share {
+                    font-size: 3.5rem;
+                }
+    
+                h2#txt-never {
+                    font-size: 3rem;
+                }
+    
+                h2#price {
+                    font-size: 5rem;
+                    line-height: 4.5rem;
+                }                
+    
+                .description {
+                    p#percentage {
+                        span {
+                            color: $secondary;
+                            font-size: 2rem;
+                        }
+                    }
+                    .right { width: 60%; }
+                }
+    
+            }
+    
+        }
+
+        .activities {
+            .activity {
+                width: 50%;
+                .link {
+                    a {
+                        font-size: 1rem;
+                        padding: 4px $paddingSemi;
+                    }
+                }
+            }
+        }
+    
+        .properties {
+            .property {
+                width: 100%;
+                .title {
+                    padding: $paddingNormal 0;
+                    p { font-size: 1rem; }
+                }
+            }
+        }
+
+    }
+
+}
